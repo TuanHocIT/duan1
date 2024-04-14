@@ -1,0 +1,379 @@
+:root {
+  --main-color: #fff;
+  --text-color: #000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  width: 100%;
+  height: 80vh;
+  background: url(./accest/img/background1.jpg) no-repeat;
+  background-size: 100% 70vh;
+}
+
+.header-navbar {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  width: 97.5%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+.header-navbar_logo a img {
+  width: 120px;
+  height: 70px;
+  padding-top: 10px;
+}
+
+.header-navbar_list ul {
+  list-style: none;
+  padding-top: 30px;
+}
+.header-navbar_list ul li {
+  display: inline-block;
+  position: relative;
+  margin-left: 40px;
+}
+.header-navbar_list ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 20px;
+}
+.header-navbar_list ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: whitesmoke;
+  box-shadow: 2px 2px 2px black;
+  position: absolute;
+  left: 0px;
+  bottom: -3px;
+}
+.header-navbar_list ul li a:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+.header-navbar_shopping {
+  padding-top: 25px;
+}
+.header-navbar_shopping a ion-icon {
+  color: var(--text-color);
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+.header-navbar_list ul li a:hover {
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px black;
+}
+.header-navbar_shopping a ion-icon:hover {
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px black;
+}
+
+.shop-shoes {
+  width: calc(100%-300px);
+  height: 600px;
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-bottom: 40px;
+}
+.shop-title {
+  width: 100%;
+  height: 10%;
+  position: relative;
+}
+
+.shop-title h1 {
+  font-size: 25px;
+  font-weight: 100;
+  letter-spacing: 20px;
+  padding-left: 230px;
+  padding-bottom: 30px;
+}
+
+.shop-title::after {
+  content: "";
+  width: 200px;
+  height: 1px;
+  border-bottom: 1px solid black;
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+.shoes-introduce {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+}
+.shoes-introduce .introduce {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.introduce img {
+  padding: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.introduce h1 {
+  font-size: 25px;
+  text-align: center;
+  opacity: 0.8;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.introduce a {
+  text-decoration: none;
+  color: #000;
+}
+.introduce p {
+  text-align: center;
+  opacity: 0.7;
+  cursor: pointer;
+  font-size: 18px;
+  padding-top: 5px;
+}
+.introduce h1:hover {
+  opacity: 1;
+}
+.slogan {
+  width: 100%;
+  height: 400px;
+  background-color: aliceblue;
+}
+
+.slogan h6 {
+  font-size: 25px;
+  font-weight: 100;
+  opacity: 0.9;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 10px;
+  padding-top: 40px;
+}
+.slogan p {
+  font-size: 18px;
+  font-weight: 100;
+  opacity: 0.9;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: justify;
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+.commit {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.commit1 {
+  display: flex;
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 0 50px;
+}
+.commit1 ion-icon {
+  width: 70px;
+  height: 70px;
+  padding-top: 15px;
+}
+.commit1 h3 {
+  padding-top: 45px;
+  padding-left: 40px;
+  font-weight: 100;
+}
+.commit2 {
+  display: flex;
+  padding: 0 50px;
+}
+.commit2 ion-icon {
+  width: 70px;
+  height: 70px;
+  padding-top: 15px;
+}
+.commit2 h3 {
+  padding-top: 45px;
+  padding-left: 40px;
+  font-weight: 100;
+}
+.address {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  background: aliceblue;
+}
+
+.address1 {
+  margin-top: 70px;
+}
+
+.address1 ul {
+  list-style: decimal;
+  padding-left: 20px;
+}
+.address1 h2 {
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.address1 ul li {
+  padding-top: 15px;
+}
+.address1 ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+.address1 ul li a:hover {
+  opacity: 5;
+}
+.address1 ul li span {
+  font-size: 15px;
+  font-weight: 100;
+  opacity: 0.7;
+}
+.footer {
+  width: 100%;
+  height: 350px;
+  padding-top: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.footer-up {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  padding-bottom: 50px;
+}
+.footer-up_logo {
+  width: 20%;
+  height: 100%;
+}
+.footer-up_logo img {
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+.footer-up_logo p {
+  padding-left: 70px;
+  font-size: 15px;
+  font-weight: 100;
+  opacity: 0.5;
+}
+.footer-up_logo h3 {
+  padding-top: 10px;
+  padding-left: 70px;
+  font-size: 35px;
+}
+.footer-up_information {
+  width: 30%;
+  height: 100%;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  padding-left: 40px;
+  padding-top: 15px;
+  padding-right: 30px;
+}
+
+.footer-up_information h4 {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.footer-up_information ul {
+  list-style: none;
+  width: 50%;
+}
+.footer-up_information ul li a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.7;
+  font-weight: 100;
+  line-height: 40px;
+}
+.footer-ul {
+  display: flex;
+}
+
+.footer-up_information1 {
+  width: 20%;
+  height: 100%;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  padding-left: 40px;
+  padding-top: 15px;
+}
+
+.footer-up_information1 h4 {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.footer-up_information1 ul {
+  list-style: none;
+}
+.footer-up_information1 ul li a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.7;
+  font-weight: 100;
+  line-height: 40px;
+}
+.footer-up_information1 ul li a span {
+  padding-left: 7px;
+  padding-bottom: 10px;
+}
+.footer-up_information1 ul li a ion-icon {
+  width: 20px;
+  height: 20px;
+}
+.footer-up_information ul li a:hover {
+  opacity: 5;
+}
+.footer-up_information1 ul li a:hover {
+  opacity: 5;
+}
+.footer-down {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+.footer-down_tb {
+  width: 15%;
+  padding-left: 80px;
+}
+.footer-down_tb img {
+  padding-top: 15px;
+}
+.footer-down_gif {
+  padding-top: 40px;
+  opacity: 0.5;
+  width: 20%;
+  padding-left: 20px;
+}
+.footer-down_information {
+  width: 65%;
+  padding-left: 100px;
+  padding-top: 15px;
+}
+
+.footer-down_information h5 {
+  font-size: 17px;
+  opacity: 0.8;
+  font-weight: 100;
+  padding-bottom: 2px;
+}
+.footer-down_information p {
+  opacity: 0.7;
+  font-size: 15px;
+  padding-bottom: 2px;
+}

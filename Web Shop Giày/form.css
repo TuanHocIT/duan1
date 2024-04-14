@@ -1,0 +1,252 @@
+:root {
+  --main-color: #fff;
+  --text-color: #000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  background: url(./accest/img/background.jpg) no-repeat;
+
+  background-size: 100% 100vh;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.header-navbar {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  top: 0;
+  width: 97.5%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+.header-navbar_logo a img {
+  width: 120px;
+  height: 70px;
+  padding-top: 10px;
+}
+
+.header-navbar_list ul {
+  list-style: none;
+  padding-top: 30px;
+}
+.header-navbar_list ul li {
+  display: inline-block;
+  position: relative;
+  margin-left: 40px;
+}
+.header-navbar_list ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 20px;
+}
+.header-navbar_list ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: whitesmoke;
+  box-shadow: 2px 2px 2px black;
+  position: absolute;
+  left: 0px;
+  bottom: -3px;
+}
+.header-navbar_list ul li a:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+.header-navbar_shopping {
+  padding-top: 25px;
+}
+.header-navbar_shopping a ion-icon {
+  color: var(--text-color);
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+.header-navbar_list ul li a:hover {
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px black;
+}
+.header-navbar_shopping a ion-icon:hover {
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px black;
+}
+.header-body {
+  width: 80%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  right: 10%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 2px 4px 4px white;
+}
+.title {
+  width: 50%;
+  height: 100%;
+}
+
+.title h1 {
+  font-size: 80px;
+  color: #fff;
+  padding-top: 100px;
+  text-shadow: 2px 2px black;
+}
+.title h3 {
+  font-size: 35px;
+  color: #fff;
+  line-height: 15px;
+  text-shadow: 2px 2px black;
+}
+.title p {
+  font-size: 20px;
+  text-align: justify;
+  color: #fff;
+  padding-top: 60px;
+  padding-left: 40px;
+  text-indent: 50px;
+  text-shadow: 2px 2px black;
+}
+.icon {
+  padding-right: 250px;
+}
+.icon ion-icon {
+  width: 30px;
+  height: 30px;
+  padding-left: 25px;
+  padding-top: 110px;
+  color: #fff;
+  opacity: 0.5;
+}
+.icon ion-icon:hover {
+  opacity: 5;
+}
+.login {
+  width: 50%;
+  height: 100%;
+}
+.login h1 {
+  color: #fff;
+  text-shadow: 1px 1px black;
+  font-size: 50px;
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+.form-tk {
+  width: 200px;
+  height: 30px;
+  padding: 5px 20px 5px 35px;
+  font-size: 15px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid white;
+  margin-top: 10px;
+  outline: none;
+}
+
+.form-dn ion-icon {
+  width: 30px;
+  height: 30px;
+  color: white;
+  position: absolute;
+  top: 185px;
+}
+.form-dn1 {
+  padding-bottom: 15px;
+}
+.form-dn1 ion-icon {
+  width: 30px;
+  height: 30px;
+  color: white;
+  position: absolute;
+  top: 238px;
+  cursor: pointer;
+}
+.form-dn1 .eyes1 {
+  width: 20px;
+  height: 30px;
+  color: white;
+  position: absolute;
+  right: 170px;
+}
+.check-rmb {
+  width: 15px;
+  height: 15px;
+  padding-top: 100px;
+  position: absolute;
+  top: 287px;
+  right: 400px;
+  cursor: pointer;
+}
+.login p {
+  color: white;
+  position: absolute;
+  top: 287px;
+  right: 310px;
+  font-size: 13px;
+}
+.dn {
+  margin-top: 30px;
+  width: 260px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.login h6 {
+  color: #847575;
+  font-size: 15px;
+  font-weight: 100;
+  padding-top: 15px;
+}
+.dn-app {
+  padding-top: 5px;
+}
+
+.dn-app input {
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 15px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.dn-app ion-icon {
+  position: absolute;
+  color: blue;
+  top: 372px;
+  right: 395px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.dn-app .gg {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  top: 372px;
+  right: 260px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.login h6 a {
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+}
